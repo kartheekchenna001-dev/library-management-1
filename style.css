@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #1d4ed8;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #64748b;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#bookList {
+  padding: 0;
+  list-style: none;
+}
+
+#bookList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+  padding: 12px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+#bookList .delete-button {
+  background: #dc2626;
+}
+
+#bookList .delete-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 18px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
